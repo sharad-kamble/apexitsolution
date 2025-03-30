@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS with DevOps | Course | Apex IT Solution</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap">
+    <!-- Custom CSS file-->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <!-- GeistSans_3a0388 font-->
+    <link rel="stylesheet" href="https://your-font-cdn.com/GeistSans_3a0388.css">
+
+</head>
+
+<body>
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            Upcoming Batches: Data Science, Data Analyst, Java Fullstack, Aws DevOps, Frontend (React JS), Data Science,
+            Data Analyst, Java Fullstack, Business Analyst, Data Analyst, Data Science, Aws DevOps, Data Analyst, Data
+            Science, Aws DevOps — Upcoming Batches: Data Science, Data Analyst, Java Fullstack, Aws DevOps, Frontend
+            (React JS), Data Science, Data Analyst, Java Fullstack, Business Analyst, Data Analyst, Data Science, Aws
+            DevOps, Data Analyst, Data Science, Aws DevOps
+        </div>
+    </div>
+    <!-- Top Nav section -->
+    <header>
+        <div id="topHeader">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- Logo -->
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img src="../images/logo.jpeg" alt="Logo" width="150" height="40" class="img-fluid">
+                        </a>
+                        <!-- Custom Hamburger menu button -->
+                        <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- Collapsible contact links -->
+                        <div class="collapse navbar-collapse justify-content-end" id="topNav">
+                            <div class="center-mobile-nav navbar-nav d-flex flex-lg-row flex-column gap-1 gap-lg-3">
+                                <a href="mailto:info@apexitsolution.in" class="nav-link no-underline">
+                                    <i class="fa-solid fa-envelope"></i> info@apexitsolution.in
+                                </a>
+
+                                <a href="mailto:hr@apexitsolution.in" class="nav-link no-underline">
+                                    <i class="fa-solid fa-envelope"></i> hr@apexitsolution.in
+                                </a>
+                                <a href="tel:+9189568 89634" class="nav-link no-underline">
+                                    <i class="fa-solid fa-phone-volume"></i> +91 89568 89634
+                                </a>
+                                <a href="tel:+918010410293" class="nav-link no-underline">
+                                    <i class="fa-solid fa-phone-volume"></i> +91 8010410293
+                                </a>
+                                <a href="#" class="nav-link d-inline-flex  align-items-start  no-underline"
+                                    id="bookSeatLink">
+                                    <i class="fa-solid fa-phone"></i> Book a Seat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bookSeatModal" tabindex="-1" aria-labelledby="bookSeatModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl"> <!-- Changed modal-lg to modal-xl for more width -->
+                <div class="modal-content" style="min-height: 90vh;"> <!-- Increased height -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookSeatModalLabel">Book a Seat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Left side image -->
+                            <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
+                                <img src="../images/bookseat.png" alt="Seat Booking Image" class="img-fluid rounded-5">
+                            </div>
+
+                            <!-- Vertical Line -->
+                            <div class="col-lg-1 d-none d-lg-flex align-items-center justify-content-center">
+                                <div class="border-end border-2 h-100"></div>
+                            </div>
+
+                            <!-- Right side form -->
+                            <div class="col-lg-5 col-12">
+                                <form action="../course_inquiry.php" method="post">
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullName" name="fullName"
+                                            placeholder="Enter your Full Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber"
+                                            pattern="(\+91)?[0-9]{10}" placeholder="Enter your mobile number" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="emailId" class="form-label">Email ID</label>
+                                        <input type="email" class="form-control" id="emailId" name="emailId"
+                                            placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="course" class="form-label">Course</label>
+                                        <select class="form-select" id="course" name="course" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Data Science">Data Science</option>
+                                            <option value="Power BI">Power BI</option>
+                                            <option value="React.js">React.js</option>
+                                            <option value="Python Development">Python Development</option>
+                                            <option value="Microsoft Azure">Microsoft Azure</option>
+                                            <option value="Business Analyst">Business Analyst</option>
+                                            <option value="Data Analyst">Data Analyst</option>
+                                            <option value="AWS with DevOps">AWS with DevOps</option>
+                                            <option value="Java Development">Java Development</option>
+                                            <option value="Full Stack Web Development">Full Stack Web Development
+                                            </option>
+                                            <option value="Oracle SQL and PLSQL">Oracle SQL and PLSQL</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mode" class="form-label">Mode</label>
+                                        <select class="form-select" id="mode" name="mode" required>
+                                            <option value="" selected disabled>Select Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Offline</option>
+                                            <option value="Hybrid">Hybrid</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn w-100"
+                                        style="background-color: #A051F5;">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Bottom Nav section -->
+    <header>
+        <div id="bottomHeader" class="shadow-sm">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Collapsible navigation links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav gap-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                                    <i class="fa-solid fa-graduation-cap"></i> Our Courses
+                                </a>
+                                <ul class="dropdown-menu mt-3 p-3" style="background-color: #D6B3FF; min-width: 600px;"
+                                    aria-labelledby="navbarDropdown">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <li><a class="dropdown-item" href="./data-science.html">Data Science</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./power-bi.html">Power BI</a></li>
+                                            <li><a class="dropdown-item" href="./react-js.html">React.js</a></li>
+                                            <li><a class="dropdown-item" href="./python-development.html">Python
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item" href="./microsoft-azure.html">Microsoft
+                                                    Azure</a></li>
+                                            <li><a class="dropdown-item" href="./business-analyst.html">Business
+                                                    Analyst</a></li>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <li><a class="dropdown-item" href="./data-analyst.html">Data Analyst</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./aws-devops.html">AWS with DevOps</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./java-development.html">Java
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item" href="./full-stack-web-development.html">Full
+                                                    Stack Web Development</a></li>
+                                            <li><a class="dropdown-item" href="./oracle-sql-and-plsql.html">Oracle SQL
+                                                    and PLSQL</a></li>
+                                            <!-- <li><a class="dropdown-item" href="#">test</a></li> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle " href="#" id="navbarDropdown" role="button">
+                                    <i class="fa-solid fa-calendar-days"></i> Batches
+                                </a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../batches/all-batches.html">All-Batches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../batches/online-batches.html">Online-Batches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../batches/offline-batches.html">Offline-Batches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../batches/hybrid-batches.html">Hybrid-Batches</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../our-placement.html">
+                                    <i class="fa-solid fa-award"></i> Our Placements
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../about-us.html"><i class="fa-solid fa-info-circle"></i>
+                                    About
+                                    Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../contact-us.html"><i class="fa-solid fa-envelope"></i>
+                                    Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="./technology-program.html"><i
+                                        class="fa-solid fa-chalkboard-teacher"></i> Corporate
+                                    Training</a>
+                            </li> -->
+
+
+                            <li class="nav-item dropdown">
+                                <a class="" href="#"><i class="fa-solid fa-chalkboard-teacher"></i>
+                                    Corporate
+                                    Training</a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../technology-program.html">Technology Training
+                                            Program</a></li>
+                                    <li><a class="dropdown-item" href="../management-program.html">Management
+                                            Development
+                                            Program</a></li>
+                                    <li><a class="dropdown-item" href="../enterprise-services.html">Enterprise
+                                            Services</a></li>
+                                    <li><a class="dropdown-item" href="../microsoft-365.html">Microsoft Office 365</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i>
+                                    Career</a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../career/technical.html">Technical</a></li>
+                                    <li><a class="dropdown-item" href="../career/non-technical.html">Non Technical</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <h1 class="text-center fw-bold">AWS with DevOps training in pune</h1>
+        <div class="text-center my-3">
+            <button class="btn shadow-sm" style="background-color: #A051F5; color: white; border: none;">Download
+                Syllabus</button>
+        </div>
+
+        <div class="row align-items-center mt-5">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="../images/aws-devopss.png" alt="Data Science" class="img-fluid rounded">
+            </div>
+
+            <div class="col-lg-6">
+                <div style="padding: 20px;">
+                    <h2 class="fw-bold" style="color: #A051F5;">What is AWS with DevOps?</h2>
+                    <p>
+                        Our Data Analyst course provides a hands-on learning experience, focusing on essential data
+                        analysis skills and real-world applications. You'll master data manipulation, exploration, and
+                        visualization using powerful tools like Excel, SQL, and Python. The curriculum covers data
+                        cleaning, statistical analysis, and an introduction to machine learning, helping you extract
+                        valuable insights and support data-driven decision-making. Additionally, you'll learn to create
+                        compelling visualizations and reports to present your findings effectively. Whether you're
+                        starting fresh or looking to enhance your skills, this course prepares you for a successful
+                        career in data analysis.
+
+
+                    </p>
+
+                    <a href="../demo.php" class="btn"
+                        style="background-color: #A051F5; color: white; border: none; text-decoration: none; cursor: pointer; display: inline-block; text-align: center;">
+                        Book Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding: 2rem 0;">
+        <h2 class="py-4 fs-2" style="color: #A051F5; text-align: center;">Key Features</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="d-flex align-items-start mb-4">
+                    <i class="fa-solid fa-user-check" style="font-size: 1.5rem; margin-right: 1rem;"></i>
+                    <div>
+                        <h3 style="font-weight: bold; text-decoration: underline; text-decoration-color: black;">Expert
+                            Trainers</h3>
+                        <p style="margin: 0;">Our team of expert trainers, each with over 10 years of industry
+                            experience, delivers training through real-world scenarios. We use a project-based learning
+                            approach, making sessions interactive, hands-on, and highly practical for an immersive
+                            learning experience.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start mb-4">
+                    <i class="fa-solid fa-handshake" style="font-size: 1.5rem; margin-right: 1rem;"></i>
+                    <div>
+                        <h3 style="font-weight: bold; text-decoration: underline; text-decoration-color: black;">Mock
+                            Interviews and Preparations</h3>
+                        <p style="margin: 0;">Boost your confidence with mock interviews and in-depth preparation,
+                            equipping you with the skills to excel in your next job opportunity!</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start mb-4">
+                    <i class="fa-solid fa-folder-open" style="font-size: 1.5rem; margin-right: 1rem;"></i>
+                    <div>
+                        <h3 style="font-weight: bold; text-decoration: underline; text-decoration-color: black;">Live
+                            Projects</h3>
+                        <p style="margin: 0;">Gain hands-on experience with real-world industry projects, sponsored by
+                            top companies across various sectors, ensuring you're fully prepared for success!</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-start mb-4">
+                    <i class="fa-solid fa-award" style="font-size: 1.5rem; margin-right: 1rem;"></i>
+                    <div>
+                        <h3 style="font-weight: bold; text-decoration: underline; text-decoration-color: black;">Course
+                            Completion Certificate</h3>
+                        <p style="margin: 0;">Upon completing this course, earn an Apex IT Solution certificate to
+                            enhance your resume and take your career to the next level! </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="../images/imageFeatures.png" alt="Feature Image " class=" img-fluid rounded">
+            </div>
+        </div>
+    </div>
+    <!-- Tools Used in This Course -->
+    <div class="container my-4">
+        <h3 class="fw-bold fs-2 mb-3" style=" color: #A051F5; text-align: center;">Tools Used in This Course</h3>
+        <div class="row gy-3"> <!-- Added gap between rows -->
+
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> AWS CLI
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> AWS CloudFormation
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> Docker
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> Jira
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> AWS SDKs
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> AWS CodePipeline
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> Jenkins
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 bg-light">
+                    <i class="fa-solid fa-check-circle" style="color: #A051F5;"></i> Kubernetes
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Who Can Apply Section -->
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <!-- Text Section -->
+            <div class="col-lg-8 col-md-12" style="background-color: #02406D; color: #fff; padding: 40px;">
+                <h2 style="font-weight: bold; color: #A051F5;">Who Can Apply For The Course?</h2>
+                <ul class="list-unstyled" style="padding: 0;">
+                    <li style="margin-bottom: 15px;"><span style="color: #4CAF50;">✔</span> Aspiring software developers
+                        looking for a career switch.</li>
+                    <li style="margin-bottom: 15px;"><span style="color: #4CAF50;">✔</span> Graduate and post-graduate
+                        students aiming for a career in software testing.</li>
+                    <li style="margin-bottom: 15px;"><span style="color: #4CAF50;">✔</span> Professionals from non-IT
+                        backgrounds wanting to break into the IT industry.</li>
+                    <li><span style="color: #4CAF50;">✔</span> Candidates looking to restart their careers after a gap.
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Image Section -->
+            <div class="col-lg-4 col-md-12">
+                <img src="../images/applyforcourses.png" alt="Course Image"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </div>
+    <div class="container py-5">
+        <!-- Pre-requisites Section -->
+        <h3 class="text-center fw-bold mb-4" style="color: #A051F5;">Pre-requisites/Requirements</h3>
+        <div class="row g-3 justify-content-center">
+            <div class="col-12">
+                <div class="aws-devops-button">
+                    Basic computer skills are recommended for a smooth learning experience.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="aws-devops-button">
+                    A basic understanding of mathematics fundamentals will be helpful for better grasping concepts.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="aws-devops-button">
+                    Hands-on experience coding in at least one high-level programming language.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="aws-devops-button">
+                    Expertise in automating infrastructure and managing operating systems.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="aws-devops-button">
+                    Knowledge of modern development workflows, operations processes, and methodologies.
+                </div>
+            </div>
+        </div>
+
+        <!-- Course Offerings Section -->
+        <h3 class="text-center fw-bold mt-5 mb-4" style="color: #A051F5;">Course Offerings</h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="row g-3">
+                    <div class="col-12 col-md-4">
+                        <span style="color: #1E90FF;">✔</span> Online + Offline Classes
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <span style="color: #1E90FF;">✔</span> Course Duration : 5 Months
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <span style="color: #1E90FF;">✔</span> 24 x 7 Support
+                    </div>
+                    <div style="border-top: 2px solid #A051F5; margin: 20px 0;"></div>
+                    <div class="col-12 col-md-4">
+                        <span style="color: #1E90FF;">✔</span> Effective Resume Building
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <span style="color: #1E90FF;">✔</span> Certificate of Course Completion
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <span style="color: #1E90FF;">✔</span> 100% Placement Support
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 ">
+                    <h5>About Us</h5>
+                    <p>Apex IT Solution offers dynamic courses that combine theory with hands-on training, preparing you
+                        for a successful IT career. Learn from expert instructors and gain industry-ready skills in a
+                        cutting-edge environment.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Our Courses</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../courses/data-science.html">Data Science</a></li>
+                        <li><a href="../courses/data-analyst.html">Data Analyst</a></li>
+                        <li><a href="../courses/power-bi.html">Power BI</a></li>
+                        <li><a href="../courses/aws-devops.html">AWS with DevOps</a></li>
+                        <li><a href="../courses/react-js.html">React JS</a></li>
+                        <li><a href="../courses/java-development.html">Java Development</a></li>
+                        <li><a href="../courses/python-development.html">Python Development</a></li>
+                        <li><a href="../courses/full-stack-web-development.html">Full Stack Web Development</a></li>
+                        <li><a href="../courses/microsoft-azure.html">Microsoft Azure</a></li>
+                        <li><a href="../courses/oracle-sql-and-plsql.html">Oracle SQL and PLSQL</a></li>
+                        <li><a href="../courses/business-analyst.html">Business Analyst</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../about-us.html">About Us</a></li>
+                        <li><a href="../career/technical.html">Technical Job Openings</a></li>
+                        <li><a href="../career/non-technical.html">NON-Technical Job Openings</a></li>
+                        <li><a href="../batches/all-batches.html">All Batches</a></li>
+                        <li><a href="../batches/online-batches.html">Online Batches</a></li>
+                        <li><a href="../batches/offline-batches.html">Offline Batches</a></li>
+                        <li><a href="../batches/hybrid-batches.html">Hybrid Batches</a></li>
+                        <li><a href="../our-placement.html">Our Placements</a></li>
+                        <li><a href="../contact-us.html">Contact Us</a></li>
+                        <li><a href="../enterprise-services.html">Enterprise Services</a></li>
+                        <li><a href="../management-program.html">Management Program</a></li>
+                        <li><a href="../microsoft-365.html">Microsoft-365</a></li>
+                        <li><a href="../technology-program.html">Technology Program</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Details</h5>
+                    <p><i class="fas fa-map-marker-alt" style="color: #A051F5;"></i> Office No. B 622, 6th Floor
+                        Suratwala Mark Plazzo, Hinjawadi,
+                        Pimpri-Chinchwad, Pune Maharashtra 411057.</p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: #A051F5;"></i>
+                        <a href="mailto:info@apexitsolution.in" style="text-decoration: none; color: inherit;">
+                            info@apexitsolution.in
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: #A051F5;"></i>
+                        <a href="mailto:hr@apexitsolution.in" style="text-decoration: none; color: inherit;">
+                            hr@apexitsolution.in
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: #A051F5;"></i>
+                        <a href="tel:+918956889634" style="text-decoration: none; color: inherit;">+91 89568 89634</a>,
+                        <a href="tel:+918010410293" style="text-decoration: none; color: inherit;">8010410293</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="policy-links mt-3">
+                        <a href="#">Refund Policy</a> | <a href="#">Privacy Policy</a>
+                    </div>
+                    <p class="mt-3">2025 &copy; All Rights Reserved | Designed and Developed by <a
+                            href="../index.html">Apex IT
+                            Solution</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- top nav toggle -->
+    <script>
+        const toggler = document.getElementById('navbarToggler');
+        const icon = toggler.querySelector('i');
+
+        // Handle icon change on toggle
+        toggler.addEventListener('click', () => {
+            const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+
+    <!-- courses -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggle = document.getElementById("navbarDropdown");
+            const dropdownMenu = dropdownToggle.nextElementSibling;
+
+            dropdownToggle.addEventListener("click", function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle("show");
+            });
+
+            // Close dropdown on clicking outside
+            document.addEventListener("click", function (e) {
+                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+    <!-- Script to Stop Video When Modal Closes -->
+    <script>
+        const videoModal = document.getElementById('videoModal');
+        videoModal.addEventListener('hidden.bs.modal', () => {
+            const iframe = document.getElementById('careerVideo');
+            iframe.src = iframe.src; // Reset video src to stop playback
+        });
+    </script>
+
+    <!-- // Show the modal 2 seconds after click on book a seat -->
+    <script>
+        document.getElementById('bookSeatLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            var bookSeatModal = new bootstrap.Modal(document.getElementById('bookSeatModal'));
+            bookSeatModal.show();
+        });
+    </script>
+</body>
+
+</html>

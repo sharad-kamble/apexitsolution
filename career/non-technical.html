@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non Technical Job | Career | Apex IT Solution</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap">
+    <!-- Custom CSS file-->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <!-- GeistSans_3a0388 font-->
+    <link rel="stylesheet" href="https://your-font-cdn.com/GeistSans_3a0388.css">
+
+</head>
+
+<body>
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            Upcoming Batches: Data Science, Data Analyst, Java Fullstack, Aws DevOps, Frontend (React JS), Data Science,
+            Data Analyst, Java Fullstack, Business Analyst, Data Analyst, Data Science, Aws DevOps, Data Analyst, Data
+            Science, Aws DevOps — Upcoming Batches: Data Science, Data Analyst, Java Fullstack, Aws DevOps, Frontend
+            (React JS), Data Science, Data Analyst, Java Fullstack, Business Analyst, Data Analyst, Data Science, Aws
+            DevOps, Data Analyst, Data Science, Aws DevOps
+        </div>
+    </div>
+    <!-- Top Nav section -->
+    <header>
+        <div id="topHeader">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- Logo -->
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img src="../images/logo.jpeg" alt="Logo" width="150" height="40" class="img-fluid">
+                        </a>
+                        <!-- Custom Hamburger menu button -->
+                        <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <!-- Collapsible contact links -->
+                        <div class="collapse navbar-collapse justify-content-end" id="topNav">
+                            <div class="center-mobile-nav navbar-nav d-flex flex-lg-row flex-column gap-1 gap-lg-3">
+                                <a href="mailto:info@apexitsolution.in" class="nav-link no-underline">
+                                    <i class="fa-solid fa-envelope"></i> info@apexitsolution.in
+                                </a>
+
+                                <a href="mailto:hr@apexitsolution.in" class="nav-link no-underline">
+                                    <i class="fa-solid fa-envelope"></i> hr@apexitsolution.in
+                                </a>
+                                <a href="tel:+9189568 89634" class="nav-link no-underline">
+                                    <i class="fa-solid fa-phone-volume"></i> +91 89568 89634
+                                </a>
+                                <a href="tel:+918010410293" class="nav-link no-underline">
+                                    <i class="fa-solid fa-phone-volume"></i> +91 8010410293
+                                </a>
+                                <a href="#" class="nav-link d-inline-flex  align-items-start  no-underline"
+                                    id="bookSeatLink">
+                                    <i class="fa-solid fa-phone"></i> Book a Seat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bookSeatModal" tabindex="-1" aria-labelledby="bookSeatModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl"> <!-- Changed modal-lg to modal-xl for more width -->
+                <div class="modal-content" style="min-height: 90vh;"> <!-- Increased height -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookSeatModalLabel">Book a Seat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Left side image -->
+                            <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
+                                <img src="../images/bookseat.png" alt="Seat Booking Image" class="img-fluid rounded-5">
+                            </div>
+
+                            <!-- Vertical Line -->
+                            <div class="col-lg-1 d-none d-lg-flex align-items-center justify-content-center">
+                                <div class="border-end border-2 h-100"></div>
+                            </div>
+
+                            <!-- Right side form -->
+                            <div class="col-lg-5 col-12">
+                                <form action="../course_inquiry.php" method="post">
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullName" name="fullName"
+                                            placeholder="Enter your Full Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber"
+                                            pattern="(\+91)?[0-9]{10}" placeholder="Enter your mobile number" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="emailId" class="form-label">Email ID</label>
+                                        <input type="email" class="form-control" id="emailId" name="emailId"
+                                            placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="course" class="form-label">Course</label>
+                                        <select class="form-select" id="course" name="course" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Data Science">Data Science</option>
+                                            <option value="Power BI">Power BI</option>
+                                            <option value="React.js">React.js</option>
+                                            <option value="Python Development">Python Development</option>
+                                            <option value="Microsoft Azure">Microsoft Azure</option>
+                                            <option value="Business Analyst">Business Analyst</option>
+                                            <option value="Data Analyst">Data Analyst</option>
+                                            <option value="AWS with DevOps">AWS with DevOps</option>
+                                            <option value="Java Development">Java Development</option>
+                                            <option value="Full Stack Web Development">Full Stack Web Development
+                                            </option>
+                                            <option value="Oracle SQL and PLSQL">Oracle SQL and PLSQL</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mode" class="form-label">Mode</label>
+                                        <select class="form-select" id="mode" name="mode" required>
+                                            <option value="" selected disabled>Select Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Offline</option>
+                                            <option value="Hybrid">Hybrid</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn w-100"
+                                        style="background-color: #A051F5;">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Bottom Nav section -->
+    <header>
+        <div id="bottomHeader" class="shadow-sm">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Collapsible navigation links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav gap-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"><i class="fa-solid fa-house"></i> Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                                    <i class="fa-solid fa-graduation-cap"></i> Our Courses
+                                </a>
+                                <ul class="dropdown-menu mt-3 p-3" style="background-color: #D6B3FF; min-width: 600px;"
+                                    aria-labelledby="navbarDropdown">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <li><a class="dropdown-item" href="../courses/data-science.html">Data
+                                                    Science</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="../courses/power-bi.html">Power BI</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="../courses/react-js.html">React.js</a>
+                                            </li>
+                                            <li><a class="dropdown-item"
+                                                    href="../courses/python-development.html">Python
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../courses/microsoft-azure.html">Microsoft
+                                                    Azure</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../courses/business-analyst.html">Business
+                                                    Analyst</a></li>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <li><a class="dropdown-item" href="../courses/data-analyst.html">Data
+                                                    Analyst</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="../courses/aws-devops.html">AWS with
+                                                    DevOps</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./java-development.html">Java
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../courses/full-stack-web-development.html">Full
+                                                    Stack Web Development</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="../courses/oracle-sql-and-plsql.html">Oracle SQL
+                                                    and PLSQL</a></li>
+                                            <!-- <li><a class="dropdown-item" href="#">test</a></li> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle " href="#" id="navbarDropdown" role="button">
+                                    <i class="fa-solid fa-calendar-days"></i> Batches
+                                </a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../batches/all-batches.html">All-Batches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../batches/online-batches.html">Online-Batches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../batches/offline-batches.html">Offline-Batches</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="../batches/hybrid-batches.html">Hybrid-Batches</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../our-placement.html">
+                                    <i class="fa-solid fa-award"></i> Our Placements
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../about-us.html"><i class="fa-solid fa-info-circle"></i>
+                                    About
+                                    Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../contact-us.html"><i class="fa-solid fa-envelope"></i>
+                                    Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="./technology-program.html"><i
+                                        class="fa-solid fa-chalkboard-teacher"></i> Corporate
+                                    Training</a>
+                            </li> -->
+
+
+                            <li class="nav-item dropdown">
+                                <a class="" href="#"><i class="fa-solid fa-chalkboard-teacher"></i>
+                                    Corporate
+                                    Training</a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../technology-program.html">Technology Training
+                                            Program</a></li>
+                                    <li><a class="dropdown-item" href="../management-program.html">Management
+                                            Development
+                                            Program</a></li>
+                                    <li><a class="dropdown-item" href="../enterprise-services.html">Enterprise
+                                            Services</a></li>
+                                    <li><a class="dropdown-item" href="../microsoft-365.html">Microsoft Office 365</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i>
+                                    Career</a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="../career/technical.html">Technical</a></li>
+                                    <li><a class="dropdown-item" href="../career/non-technical.html">Non Technical</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-5" style="color: #A051F5;">See Opportunities for you...</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100" style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <h3 class="fw-bold mb-3">Admission Counselor</h3>
+                    <p class="m-0"><strong>Role and Responsibilities:</strong> Lead Conversion:Effectively engage with
+                        prospective students via calls, emails, and in-person interactions to convert leads into
+                        admissions.Provide de...</p>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#admissionModal"
+                        style="color: purple; text-decoration: none;">...Read
+                        More</a>
+                    <p class="m-0"><strong>Education:</strong> Bachelor’s degree</p>
+                    <p class="m-0"><strong>Job type:</strong> Part/Full time</p>
+                    <p class="m-0"><strong>Experience:</strong> Excellent communication and interpersonal skills.
+                        Proficiency in MS Office and CRM tools.</p>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+
+
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card p-3 mb-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">Admin Executive</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> Apex IT Soluion is a
+                            leading
+                            software training and development service provider, dedicated to empowering individuals with
+                            in-demand technica...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#adminModalLabel"
+                            style="color: purple; text-decoration: none">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Any Graduate</p>
+                        <p class="m-0"><strong>Job type:</strong> Full Time</p>
+                        <p class="m-0"><strong>Experience:</strong> Min 2 years of experience, excellent communication
+                            skills.</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">Branch Manager</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> The Branch Manager will oversee the
+                            daily
+                            operations, growth, and management of the branch within the Edutech company. Key
+                            responsibilities include ma..</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#branchModal"
+                            style="color: purple; text-decoration: none">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Bachelor’s degree (Master’s preferred)</p>
+                        <p class="m-0"><strong>Job type:</strong> Part/Full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 4-5 years in a managerial role, leadership, sales,
+                            and
+                            communication skills.</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">HR Executive</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> Recruitment and onboarding of new
+                            employees, administering employee benefits and payroll, handle employee relations issues,
+                            performance management pro...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#HrExecutive"
+                            style="color: purple; text-decoration: none;">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Bachelor's degree in Human Resources, Business
+                            Administration, or a related field</p>
+                        <p class="m-0"><strong>Job type:</strong> Full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 2+ years</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">HR and Placement Executive</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> Manage human resources functions and
+                            placement activities, conduct interviews, coordinate placement activities for students,
+                            manage
+                            employee relations...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#hrPlacementModal"
+                            style="color: purple; text-decoration: none;">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Master's degree in Human Resources, Business
+                            Administration, or a related field</p>
+                        <p class="m-0"><strong>Job type:</strong> Full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 2+ years</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">Business Development Associate</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> Generate leads, contact potential
+                            clients, promote training offerings, develop relationships with corporate clients, negotiate
+                            partnerships, organize ...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#bda"
+                            style="color: purple; text-decoration: none;">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Bachelor's degree in Business Administration,
+                            Marketing,
+                            or a related field</p>
+                        <p class="m-0"><strong>Job type:</strong> Full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 2+ years</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">Front Desk Executive</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> Should possess strong customer
+                            service
+                            and communication skills, along with organizational abilities and attention to detail. They
+                            must
+                            present a prof...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#frontdesk"
+                            style="color: purple; text-decoration: none;">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Bachelor's degree in Hospitality, Business
+                            Administration, or a related field</p>
+                        <p class="m-0"><strong>Job type:</strong> part/full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 2+ years</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">Team Lead</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> As a Team Lead, you will be
+                            responsible
+                            for overseeing team members, participating in recruitment, providing training, managing
+                            performance, planning ...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#teamlead"
+                            style="color: purple; text-decoration: none;">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Bachelor's degree in Management, Business
+                            Administration,
+                            or a related field</p>
+                        <p class="m-0"><strong>Job type:</strong> part/full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 2+ years</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">Team Manager</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> Oversee teams, set goals, and ensure
+                            tasks are completed efficiently, provide guidance, resolve conflicts, evaluate performance,
+                            communicate with stak...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#teammanager"
+                            style="color: purple; text-decoration: none;">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Master's degree in Management, Business
+                            Administration,
+                            or a related field</p>
+                        <p class="m-0"><strong>Job type:</strong> full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 2+ years</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="col-md-4">
+                <div class="card p-3 h-100 d-flex flex-column"
+                    style="border: 1px solid #ccc; border-radius: 10px; padding: 0;">
+                    <div class="flex-grow-1">
+                        <h3 class="fw-bold mb-3">Training and Placement Officer</h3>
+                        <p class="m-0"><strong>Role and Responsibilities:</strong> Coordinate training programs,
+                            workshops,
+                            and seminars to enhance skills and employability, establish relationships with industry
+                            partners
+                            to organize ...</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#trainingandplacement"
+                            style="color: purple; text-decoration: none;">...Read More</a>
+                        <p class="m-0"><strong>Education:</strong> Master's degree in Education, Human Resources, or a
+                            related field</p>
+                        <p class="m-0"><strong>Job type:</strong> full time</p>
+                        <p class="m-0"><strong>Experience:</strong> 2+ years</p>
+                    </div>
+                    <a href="../job_application.php" class="btn mt-3" style="background-color: #A051F5; color: white;">
+                        Apply
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Admission Counselor Modal -->
+    <div class="modal fade" id="admissionModal" tabindex="-1" aria-labelledby="admissionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="admissionModalLabel"><strong> Admission Counselor</strong></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5><strong>Role and Responsibilities:</strong></h5>
+                    <ul>
+                        <li>Lead Conversion: Effectively engage with prospective students via calls, emails, and
+                            in-person interactions to convert leads into admissions.</li>
+                        <li>Provide detailed information about the institute's courses, programs, and admission
+                            processes to prospective students.</li>
+                        <li>Counseling & Walk-ins: Welcome and counsel walk-in students, understanding their needs and
+                            guiding them toward suitable programs.</li>
+                        <li>Offer career guidance and assist students in choosing the right courses based on their
+                            interests and career goals.</li>
+                        <li>Record Management: Maintain and update accurate student records, including personal details,
+                            inquiries, and admission status.</li>
+                        <li>Ensure proper documentation and adherence to institute policies during the admission
+                            process.</li>
+                        <li>Follow-ups & Reporting: Conduct regular follow-ups with potential students to ensure timely
+                            admission closures.</li>
+                        <li>Prepare and share daily/weekly reports on leads, admissions, and related metrics with the
+                            reporting manager.</li>
+                        <li>Collaborative Tasks: Assist in organizing and participating in promotional activities like
+                            webinars, seminars, and open houses.</li>
+                        <li>Handle additional responsibilities and tasks assigned by the reporting manager as needed.
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>Education: Bachelor’s degree</li>
+                        <li>Job Type: Part/Full time</li>
+                        <li>Experience: Excellent communication and interpersonal skills. Proficiency in MS Office and
+                            CRM tools. Prior experience in counseling, sales, or customer service will be an advantage.
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Executive Modal -->
+    <div class="modal fade" id="adminModalLabel" tabindex="-1" aria-labelledby="adminModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="adminModalLabel"><strong>Admin Executive</strong> </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body">
+                        <h5><strong>Role and Responsibilities:</strong></h5>
+
+                        <ul>
+                            <li>Apex IT Solution is a leading software training and development service
+                                provider, dedicated to empowering individuals with in-demand technical skills.</li>
+                            <li>We seek a proactive and organized Admin Executive to manage our administrative
+                                operations and ensure a seamless experience for our trainers and students.</li>
+                            <li>Office Administration: Oversee day-to-day office operations, including inventory
+                                management, record-keeping, and coordination of facilities.</li>
+                            <li>Ensure a well-maintained and professional work environment.</li>
+                            <li>Fee Follow-ups and Recovery: Track and follow up on pending fees with students.</li>
+                            <li>Manage recovery of overdue payments and maintain accurate financial records.</li>
+                            <li>Trainer Coordination: Update trainers regarding their assigned batches and schedules.
+                            </li>
+                            <li>Act as the primary point of contact for trainers, addressing their administrative
+                                queries.</li>
+                            <li>Batch Management: Maintain and update records of ongoing batches, including schedules,
+                                trainer assignments, and student attendance.</li>
+                            <li>Ensure all stakeholders are informed of any changes to batch schedules.</li>
+                            <li>Student Feedback and Updates: Regularly collect and document feedback from students
+                                regarding their courses.</li>
+                            <li>Communicate feedback to the relevant teams and take necessary action to improve the
+                                student experience.</li>
+                            <li>Communication and Reporting: Prepare weekly and monthly reports on administrative
+                                activities, batch status, and fee collections.</li>
+                            <li>Ensure timely communication of updates to trainers, students, and management.</li>
+                        </ul>
+
+
+                        <ul>
+                            <li>Education: Any Graduate</li>
+                            <li>Job Type: Full Time</li>
+                            <li>Experience: Min 2 years of experience, Excellent communication skills and interpersonal
+                                skills.</li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Branch Manager Modal -->
+    <div class="modal fade" id="branchModal" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="branchModalLabel"> <strong> Branch Manager</strong></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+
+                <div class="modal-body">
+                    <h5><strong>Role and Responsibilities:</strong></h5>
+                    <ul>
+                        <li>Lead Conversion: Effectively engage with prospective students via calls, emails, and
+                            in-person interactions to convert leads into admissions.</li>
+                        <li>Provide detailed information about the institute's courses, programs, and admission
+                            processes to prospective students.</li>
+                        <li>Counseling & Walk-ins: Welcome and counsel walk-in students, understanding their needs
+                            and guiding them toward suitable programs.</li>
+                        <li>Offer career guidance and assist students in choosing the right courses based on their
+                            interests and career goals.</li>
+                        <li>Record Management: Maintain and update accurate student records, including personal
+                            details, inquiries, and admission status.</li>
+                        <li>Ensure proper documentation and adherence to institute policies during the admission
+                            process.</li>
+                        <li>Follow-ups & Reporting: Conduct regular follow-ups with potential students to ensure
+                            timely admission closures.</li>
+                        <li>Prepare and share daily/weekly reports on leads, admissions, and related metrics with
+                            the reporting manager.</li>
+                        <li>Collaborative Tasks: Assist in organizing and participating in promotional activities
+                            like webinars, seminars, and open houses.</li>
+                        <li>Handle additional responsibilities and tasks assigned by the reporting manager as
+                            needed.</li>
+                    </ul>
+                    <ul>
+                        <li>Education: Bachelor’s degree</li>
+                        <li>Job Type: Part/Full time</li>
+                        <li>Experience: 4-5 years in a managerial role, ideally in Edutech or education.Strong
+                            leadership, sales, marketing, financial management, and communication skills
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HR Modal -->
+    <div class="modal fade" id="HrExecutive" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h4 class="modal-title" id="HrModal"> <strong> Branch Manager</strong></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <h3 class="modal-title mb-4"><strong>HR Executive</strong></h3>
+                    <h6><strong>Role and Responsibilities:</strong></h6>
+                    <ul>
+                        <li>Recruitment and onboarding of new employees</li>
+                        <li>Administering employee benefits and payroll</li>
+                        <li>Handling employee relations issues</li>
+                        <li>Managing performance processes</li>
+                        <li>Training and development initiatives</li>
+                        <li>Collaborating with other departments</li>
+                    </ul>
+                    <h6><strong>Additional Details:</strong></h6>
+                    <p><strong>Education:</strong> Bachelor’s degree in Human Resources, Business Administration, or a
+                        related field</p>
+                    <p><strong>Job Type:</strong> Full time</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- placement Modal -->
+    <div class="modal fade" id="hrPlacementModal" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h4 class="modal-title" id="HrModal"> <strong> Branch Manager</strong></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <h3 class="modal-title mb-4"><strong>HR and Placement Executive</strong></h3>
+                    <h6><strong>Role and Responsibilities:</strong></h6>
+                    <ul>
+                        <li>Manage human resources functions and placement activities, conduct interviews, coordinate
+                            placement activities for students, manage employee relations, administer benefits, cultivate
+                            relationships with industry partners to facilitate internships, job placements, and career
+                            development opportunities for students</li>
+                    </ul>
+                    <!-- 
+                    <h6><strong>Additional Details:</strong></h6> -->
+                    <p><strong>Education:</strong> Master's degree in Human Resources, Business Administration, or a
+                        related field</p>
+                    <p><strong>Job Type:</strong> Full time</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Business Development Associate -->
+    <div class="modal fade" id="bda" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h4 class="modal-title" id="HrModal"> <strong> Branch Manager</strong></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <h3 class="modal-title mb-4"><strong> Business Development Associate</strong></h3>
+                    <h6><strong>Role and Responsibilities:</strong></h6>
+                    <ul>
+                        <li>Generate leads, contact potential clients, promote training offerings, develop relationships
+                            with corporate clients, negotiate partnerships, organize promotional events, gather
+                            feedback, and collaborate with internal teams</li>
+                    </ul>
+                    <!-- 
+                    <h6><strong>Additional Details:</strong></h6> -->
+                    <p><strong>Education:</strong> Bachelor's degree in Business Administration, Marketing, or a related
+                        field</p>
+                    <p><strong>Job Type:</strong> part/full time</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="frontdesk" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h4 class="modal-title" id="HrModal"> <strong> Branch Manager</strong></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <h3 class="modal-title mb-4"><strong> Front Desk Executive</strong></h3>
+                    <h6><strong>Role and Responsibilities:</strong></h6>
+                    <ul>
+                        <li>Should possess strong customer service and communication skills, along with organizational
+                            abilities and attention to detail. They must present a prof...</li>
+                    </ul>
+                    <!-- 
+                    <h6><strong>Additional Details:</strong></h6> -->
+                    <p><strong>Education:</strong> Bachelor's degree in Hospitality, Business Administration, or a
+                        related field</p>
+                    <p><strong>Job Type:</strong> part/full time</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Manager-->
+    <div class="modal fade" id="teamlead" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h4 class="modal-title" id="HrModal"> <strong> Branch Manager</strong></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <h3 class="modal-title mb-4"><strong> Team Lead</strong></h3>
+                    <h6><strong>Role and Responsibilities:</strong></h6>
+                    <ul>
+                        <li>As a Team Lead, you will be responsible for overseeing team members, participating in
+                            recruitment, providing training, managing performance, planning projects, allocating
+                            resources, solving problems, facilitating communication, ensuring quality, and promoting
+                            continuous improvement</li>
+                    </ul>
+                    <!-- 
+                    <h6><strong>Additional Details:</strong></h6> -->
+                    <p><strong>Education:</strong> Bachelor's degree in Management, Business Administration, or a
+                        related field</p>
+                    <p><strong>Job Type:</strong> full time</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team manager-->
+    <div class="modal fade" id="teammanager" tabindex="-1" aria-labelledby="branchModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h3 class="modal-title mb-4"><strong> Team Manager</strong></h3>
+                    <h6><strong>Role and Responsibilities:</strong></h6>
+                    <ul>
+                        <li>Should possess strong customer service and communication skills, along with organizational
+                            abilities and attention to detail. They must present a prof...</li>
+                    </ul>
+                    <!-- 
+                    <h6><strong>Additional Details:</strong></h6> -->
+                    <p><strong>Education:</strong> Master's degree in Management, Business Administration, or a related
+                        field</p>
+                    <p><strong>Job Type:</strong> full time</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Training and Placement Officer-->
+    <div class="modal fade" id="trainingandplacement" tabindex="-1" aria-labelledby="branchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h3 class="modal-title mb-4"><strong> Training and Placement Officer</strong></h3>
+                    <h6><strong>Role and Responsibilities:</strong></h6>
+                    <ul>
+                        <li>Coordinate training programs, workshops, and seminars to enhance skills and employability,
+                            establish relationships with industry partners to organize ...</li>
+                    </ul>
+                    <!-- 
+                <h6><strong>Additional Details:</strong></h6> -->
+                    <p><strong>Education:</strong> Master's degree in Education, Human Resources, or a related field</p>
+                    <p><strong>Job Type:</strong> full time</p>
+                    <p><strong>Experience:</strong> 2+ years</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 ">
+                    <h5>About Us</h5>
+                    <p>Apex IT Solution offers dynamic courses that combine theory with hands-on training, preparing you
+                        for a successful IT career. Learn from expert instructors and gain industry-ready skills in a
+                        cutting-edge environment.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Our Courses</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../courses/data-science.html">Data Science</a></li>
+                        <li><a href="../courses/data-analyst.html">Data Analyst</a></li>
+                        <li><a href="../courses/power-bi.html">Power BI</a></li>
+                        <li><a href="../courses/aws-devops.html">AWS with DevOps</a></li>
+                        <li><a href="../courses/react-js.html">React JS</a></li>
+                        <li><a href="../courses/java-development.html">Java Development</a></li>
+                        <li><a href="../courses/python-development.html">Python Development</a></li>
+                        <li><a href="../courses/full-stack-web-development.html">Full Stack Web Development</a></li>
+                        <li><a href="../courses/microsoft-azure.html">Microsoft Azure</a></li>
+                        <li><a href="../courses/oracle-sql-and-plsql.html">Oracle SQL and PLSQL</a></li>
+                        <li><a href="../courses/business-analyst.html">Business Analyst</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="../about-us.html">About Us</a></li>
+                        <li><a href="../career/technical.html">Technical Job Openings</a></li>
+                        <li><a href="../career/non-technical.html">NON-Technical Job Openings</a></li>
+                        <li><a href="../batches/all-batches.html">All Batches</a></li>
+                        <li><a href="../batches/online-batches.html">Online Batches</a></li>
+                        <li><a href="../batches/offline-batches.html">Offline Batches</a></li>
+                        <li><a href="../batches/hybrid-batches.html">Hybrid Batches</a></li>
+                        <li><a href="../our-placement.html">Our Placements</a></li>
+                        <li><a href="../contact-us.html">Contact Us</a></li>
+                        <li><a href="../enterprise-services.html">Enterprise Services</a></li>
+                        <li><a href="../management-program.html">Management Program</a></li>
+                        <li><a href="../microsoft-365.html">Microsoft-365</a></li>
+                        <li><a href="../technology-program.html">Technology Program</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Details</h5>
+                    <p><i class="fas fa-map-marker-alt" style="color: #A051F5;"></i> Office No. B 622, 6th Floor
+                        Suratwala Mark Plazzo, Hinjawadi,
+                        Pimpri-Chinchwad, Pune Maharashtra 411057.</p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: #A051F5;"></i>
+                        <a href="mailto:info@apexitsolution.in" style="text-decoration: none; color: inherit;">
+                            info@apexitsolution.in
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: #A051F5;"></i>
+                        <a href="mailto:hr@apexitsolution.in" style="text-decoration: none; color: inherit;">
+                            hr@apexitsolution.in
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: #A051F5;"></i>
+                        <a href="tel:+918956889634" style="text-decoration: none; color: inherit;">+91 89568 89634</a>,
+                        <a href="tel:+918010410293" style="text-decoration: none; color: inherit;">8010410293</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="policy-links mt-3">
+                        <a href="#">Refund Policy</a> | <a href="#">Privacy Policy</a>
+                    </div>
+                    <p class="mt-3">2025 &copy; All Rights Reserved | Designed and Developed by <a
+                            href="../index.html">Apex IT
+                            Solution</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- top nav toggle -->
+    <script>
+        const toggler = document.getElementById('navbarToggler');
+        const icon = toggler.querySelector('i');
+
+        // Handle icon change on toggle
+        toggler.addEventListener('click', () => {
+            const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+
+    <!-- courses -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggle = document.getElementById("navbarDropdown");
+            const dropdownMenu = dropdownToggle.nextElementSibling;
+
+            dropdownToggle.addEventListener("click", function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle("show");
+            });
+
+            // Close dropdown on clicking outside
+            document.addEventListener("click", function (e) {
+                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+    <!-- // Show the modal 2 seconds after click on book a seat -->
+    <script>
+        document.getElementById('bookSeatLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            var bookSeatModal = new bootstrap.Modal(document.getElementById('bookSeatModal'));
+            bookSeatModal.show();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex IT Solution: Project-Based IT Training &amp; Placement</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap">
+    <!-- Custom CSS file-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <!-- GeistSans_3a0388 font-->
+    <link rel="stylesheet" href="https://your-font-cdn.com/GeistSans_3a0388.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+
+</head>
+
+<body>
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            Upcoming Batches: Data Science, Data Analyst, Java Fullstack, Aws DevOps, Frontend (React JS), Data Science,
+            Data Analyst, Java Fullstack, Business Analyst, Data Analyst, Data Science, Aws DevOps, Data Analyst, Data
+            Science, Aws DevOps — Upcoming Batches: Data Science, Data Analyst, Java Fullstack, Aws DevOps, Frontend
+            (React JS), Data Science, Data Analyst, Java Fullstack, Business Analyst, Data Analyst, Data Science, Aws
+            DevOps, Data Analyst, Data Science, Aws DevOps
+        </div>
+    </div>
+    <!-- Top Nav section -->
+
+    <header>
+        <div id="topHeader">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- Logo -->
+                        <a class="navbar-brand d-flex align-items-center" href="#">
+                            <img src="./images/logo.jpeg" alt="Logo" width="150" height="40" class="img-fluid">
+                        </a>
+
+                        <!-- Custom Hamburger menu button -->
+                        <button id="navbarToggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+
+                        <!-- Collapsible contact links -->
+                        <div class="collapse navbar-collapse justify-content-end" id="topNav">
+                            <div class="center-mobile-nav navbar-nav d-flex flex-lg-row flex-column gap-1 gap-lg-3">
+
+                                <a href="mailto:info@apexitsolution.in" class="nav-link no-underline">
+                                    <i class="fa-solid fa-envelope"></i> info@apexitsolution.in
+                                </a>
+
+                                <a href="mailto:hr@apexitsolution.in" class="nav-link no-underline">
+                                    <i class="fa-solid fa-envelope"></i> hr@apexitsolution.in
+                                </a>
+
+                                <a href="tel:+9189568 89634" class="nav-link no-underline">
+                                    <i class="fa-solid fa-phone-volume"></i> +91 89568 89634
+                                </a>
+                                <a href="tel:+918010410293" class="nav-link no-underline">
+                                    <i class="fa-solid fa-phone-volume"></i> +91 8010410293
+                                </a>
+                                <a href="#" class="nav-link d-inline-flex  align-items-start  no-underline"
+                                    id="bookSeatLink">
+                                    <i class="fa-solid fa-phone"></i> Book a Seat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bookSeatModal" tabindex="-1" aria-labelledby="bookSeatModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl"> <!-- Changed modal-lg to modal-xl for more width -->
+                <div class="modal-content" style="min-height: 90vh;"> <!-- Increased height -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bookSeatModalLabel">Book a Seat</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- Left side image -->
+                            <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center">
+                                <img src="./images/bookseat.png" alt="Seat Booking Image" class="img-fluid rounded-5">
+                            </div>
+
+                            <!-- Vertical Line -->
+                            <div class="col-lg-1 d-none d-lg-flex align-items-center justify-content-center">
+                                <div class="border-end border-2 h-100"></div>
+                            </div>
+
+                            <!-- Right side form -->
+                            <div class="col-lg-5 col-12">
+                                <form action="./course_inquiry.php" method="post">
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label">Full Name</label>
+                                        <input type="text" class="form-control" id="fullName" name="fullName"
+                                            placeholder="Enter your Full Name" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mobileNumber" class="form-label">Mobile Number</label>
+                                        <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber"
+                                            pattern="(\+91)?[0-9]{10}" placeholder="Enter your mobile number" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="emailId" class="form-label">Email ID</label>
+                                        <input type="email" class="form-control" id="emailId" name="emailId"
+                                            placeholder="Enter your email" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="course" class="form-label">Course</label>
+                                        <select class="form-select" id="course" name="course" required>
+                                            <option value="" selected disabled>Select Course</option>
+                                            <option value="Data Science">Data Science</option>
+                                            <option value="Power BI">Power BI</option>
+                                            <option value="React.js">React.js</option>
+                                            <option value="Python Development">Python Development</option>
+                                            <option value="Microsoft Azure">Microsoft Azure</option>
+                                            <option value="Business Analyst">Business Analyst</option>
+                                            <option value="Data Analyst">Data Analyst</option>
+                                            <option value="AWS with DevOps">AWS with DevOps</option>
+                                            <option value="Java Development">Java Development</option>
+                                            <option value="Full Stack Web Development">Full Stack Web Development
+                                            </option>
+                                            <option value="Oracle SQL and PLSQL">Oracle SQL and PLSQL</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mode" class="form-label">Mode</label>
+                                        <select class="form-select" id="mode" name="mode" required>
+                                            <option value="" selected disabled>Select Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Offline</option>
+                                            <option value="Hybrid">Hybrid</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn w-100"
+                                        style="background-color: #A051F5;">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Bottom Nav section -->
+    <header>
+        <div id="bottomHeader" class="shadow-sm">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Collapsible navigation links -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav gap-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button">
+                                    <i class="fa-solid fa-graduation-cap"></i> Our Courses
+                                </a>
+                                <ul class="dropdown-menu mt-3 p-3" style="background-color: #D6B3FF; min-width: 600px;"
+                                    aria-labelledby="navbarDropdown">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <li><a class="dropdown-item" href="./courses/data-science.html">Data
+                                                    Science</a></li>
+                                            <li><a class="dropdown-item" href="./courses/power-bi.html">Power BI</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./courses/react-js.html">React.js</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="./courses/python-development.html">Python
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item" href="./courses/microsoft-azure.html">Microsoft
+                                                    Azure</a></li>
+                                            <li><a class="dropdown-item" href="./courses/business-analyst.html">Business
+                                                    Analyst</a></li>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <li><a class="dropdown-item" href="./courses/data-analyst.html">Data
+                                                    Analyst</a></li>
+                                            <li><a class="dropdown-item" href="./courses/aws-devops.html">AWS with
+                                                    DevOps</a></li>
+                                            <li><a class="dropdown-item" href="./courses/java-development.html">Java
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="./courses/full-stack-web-development.html">Full Stack Web
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="./courses/oracle-sql-and-plsql.html">Oracle SQL and PLSQL</a>
+                                            </li>
+                                            <!-- <li><a class="dropdown-item" href="#">test</a></li> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle " href="#" id="navbarDropdown" role="button">
+                                    <i class="fa-solid fa-calendar-days"></i> Batches
+                                </a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./batches/all-batches.html">All-Batches</a></li>
+                                    <li><a class="dropdown-item" href="./batches/online-batches.html">Online-Batches</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="./batches/offline-batches.html">Offline-Batches</a></li>
+                                    <li><a class="dropdown-item" href="./batches/hybrid-batches.html">Hybrid-Batches</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./our-placement.html">
+                                    <i class="fa-solid fa-award"></i> Our Placements
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about-us.html"><i class="fa-solid fa-info-circle"></i> About
+                                    Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact-us.html"><i class="fa-solid fa-envelope"></i>
+                                    Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="./technology-program.html"><i
+                                        class="fa-solid fa-chalkboard-teacher"></i> Corporate
+                                    Training</a>
+                            </li> -->
+
+                            <li class="nav-item dropdown">
+                                <a class="" href="#"><i class="fa-solid fa-chalkboard-teacher"></i>
+                                    Corporate
+                                    Training</a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./technology-program.html">Technology Training
+                                            Program</a></li>
+                                    <li><a class="dropdown-item" href="./management-program.html">Management Development
+                                            Program</a></li>
+                                    <li><a class="dropdown-item" href="./enterprise-services.html">Enterprise
+                                            Services</a></li>
+                                    <li><a class="dropdown-item" href="./microsoft-365.html">Microsoft Office 365</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#"><i class="fa-solid fa-briefcase"></i>
+                                    Career</a>
+                                <ul class="dropdown-menu mt-3" style="background-color: #D6B3FF;"
+                                    aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./career/technical.html">Technical</a></li>
+                                    <li><a class="dropdown-item" href="./career/non-technical.html">Non Technical</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Carousel Section -->
+    <div id="careerCarousel" class="caro-sec carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner py-3">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="min-height: 300px;">
+                <div class="container">
+                    <div class="caro-sec1 row align-items-center ">
+                        <div class="col-lg-6 col-md-12 p-0">
+                            <img src="./images/img-1.png" alt="About Our Story" class="desktop-img img-fluid"
+                                style="height: 100%; width: 100%; min-height: 250px;">
+                            <!-- <img src="./images/img-1.png" alt="Mobile Image" class="hero-img img-fluid mobile-img"> -->
+                        </div>
+                        <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center">
+                            <div
+                                class="col-lg-6 col-md-12 d-flex flex-column justify-content-center text-md-start text-center">
+                                <h4 class="heading1 fw-bold">Brighten Your Career at</h4>
+                                <h1 class="heading2 fw-bold" style="color: #A051F5;">Apex IT Solution</h1>
+                            </div>
+
+                            <p class="text-black fw-medium">
+                                Every month, over 50 live classes help advance 15,000 careers, and 85% of participants
+                                see real benefits —whether it's landing a new job or earning a promotion!
+                            </p>
+                            <h3 class="p-2 text-white fw-semibold" style="background-color: #A051F5;">
+                                "Learn without limits, brighten your Career."
+                            </h3>
+                            <p class="fw-bold"><i class="fas fa-trophy" style="color: #A051F5;"></i> Completed Batches:
+                                195</p>
+                            <p class="fw-semibold p-2"
+                                style="background-color: #F3F4F6; border-left: 4px solid #A051F5;">
+                                Courses for Freshers & Professionals Alike: Building Careers Together!
+                            </p>
+                            <h4 class="std-hired-by fw-bold">Students Hired By</h4>
+                            <div class="marquee-container">
+                                <marquee class="marquee-content py-3" behavior="scroll" direction="left"
+                                    scrollamount="30">
+                                    <img src="./images/oracle.png" class="img-fluid d-inline"
+                                        style="height: 25px; margin-right: 25px;" alt="Oracle">
+                                    <img src="./images/amazon.png" class="img-fluid d-inline"
+                                        style="height: 25px; margin-right: 25px;" alt="Amazon">
+                                    <img src="./images/microsoft.png" class="img-fluid d-inline"
+                                        style="height: 25px; margin-right: 25px;" alt="Microsoft">
+                                    <img src="./images/accenture.png" class="img-fluid d-inline"
+                                        style="height: 25px; margin-right: 25px;" alt="Accenture">
+                                </marquee>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item " style="min-height: 300px;">
+                <div class="container">
+                    <div class="caro-sec1 row align-items-center ">
+
+                        <div
+                            class="col-lg-6 col-md-12 d-flex flex-column justify-content-center text-center text-md-start">
+                            <h2 class="fw-bold text-golden1" style="color: #A051F5;">Book Your Free Demo Class</h2>
+                            <p class="fs-5 fw-semibold text-black">Leave your details & our team will get in touch with
+                                you shortly.</p>
+
+                            <span class="lead fw-bold text-golden1">Explore Our Courses:</span>
+
+                            <div class="row mt-3">
+                                <div class="col-12 col-sm-4">
+                                    <ul class="list-unstyled lead fw-semibold">
+                                        <li>✔ Data Science</li>
+                                        <li>✔ Microsoft Azure</li>
+                                        <li>✔ Salesforce</li>
+                                        <li>✔ React Js</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <ul class="list-unstyled lead fw-semibold">
+                                        <li>✔ Data Analytics</li>
+                                        <li>✔ AWS with DevOps</li>
+                                        <li>✔ .NET Development</li>
+                                        <li>✔ Java Full Stack</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <ul class="list-unstyled lead fw-semibold">
+                                        <li>✔ Java Development</li>
+                                        <li>✔ Software Testing</li>
+                                        <li>✔ Power BI</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="demo.php" class="btn btn-lg fw-bold px-4 py-2"
+                                    style="background-color: #A051F5; color: white; text-decoration: none; border-radius: 8px; transition: 0.3s;">
+                                    Book Your Demo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 p-0">
+                            <img src="./images/demo.png" alt="About Our Story" class="desktop-demo img-fluid"
+                                style="height: 100%; width: 100%; min-height: 250px;">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#careerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#careerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Modal for YouTube Video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Career Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="careerVideo" width="560" height="315"
+                            src="https://www.youtube.com/embed/nzGN_24fkTA?si=fIgOVwbnJ7uB0M5L"
+                            title="YouTube video player" frameborder="0"
+                            allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- social icon! -->
+    <div class="position-fixed end-0 top-50 translate-middle-y p-2"
+        style="background-color: #e3f2fd; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); z-index: 1050;">
+        <a href="https://www.facebook.com/profile.php?id=61573707580796" target="_blank" class="d-block mb-3">
+            <img src="./images/Facebook_icon.png" alt="Facebook" style="width: 35px; height: 35px;">
+        </a>
+        <a href="https://wa.me/918830355036" target="_blank" class="d-block mb-3">
+            <img src="./images/WhatsApp.png" alt="WhatsApp" style="width: 35px; height: 35px;">
+        </a>
+        <a href="https://www.instagram.com/apex_it_solutions/" target="_blank" class="d-block mb-3">
+            <img src="./images/instagram.png" alt="Instagram" style="width: 35px; height: 35px;">
+        </a>
+        <a href="https://www.linkedin.com/company/apexit-solution/" target="_blank" class="d-block">
+            <img src="./images/linkedin.png" alt="LinkedIn" style="width: 35px; height: 35px;">
+        </a>
+    </div>
+
+
+
+    <!-- Request callback section -->
+    <div class="caro-sec container-fluid content-container  py-3 mt-3" style="background-color: #D2D2D2;">
+        <div class="row  justify-content-center mx-3 mx-md-5 mt-4" data-aos="fade-down" data-aos-delay="100">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                <h1 class="font-Poppins mt-4 text-black fw-bold text-start">Request a Callback</h1>
+                <p class="font-Poppins mt-3 text-sm text-black">
+                    Need help? Our team’s ready for you! Just share your details, and we’ll give you a call back as
+                    soon as possible to assist with your queries.
+                </p>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mb-3">
+                <form action="./callback_request.php" method="post">
+                    <div class="mb-3">
+
+                        <input type="text" class="form-control rounded-4" id="fullName" name="fullName"
+                            placeholder="Your Name" required>
+                    </div>
+                    <div class="mb-3">
+
+                        <input type="tel" class="form-control rounded-4" id="mobileNumber" name="mobileNumber"
+                            pattern="(\+91)?[0-9]{10}" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn col-lg-6 btn-lg rounded-4"
+                            style="background-color: #A051F5; color: white;">
+                            Request a Callback <i class="fa-solid fa-paper-plane ms-1"></i>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Highlight section -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-2">
+                <div class=" d-flex align-items-center justify-content-center p-4 rounded"
+                    style="height: 100%; background-color: #A051F5; color: white;">
+                    <h3 class="fw-bold">HIGHLIGHTS</h3>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <div class="row g-4">
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card shadow text-center p-3 highlight-card">
+                            <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-user-graduate fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold">300+</h4>
+                            <p class="fw-bold lead">Students</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 " data-aos="fade-up" data-aos-delay="200">
+                        <div class="card shadow text-center p-3 highlight-card">
+                            <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-book-open fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold">20+</h4>
+                            <p class="fw-bold lead">Courses</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 " data-aos="fade-up" data-aos-delay="300">
+                        <div class="card shadow text-center p-3 highlight-card">
+                            <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-chalkboard-teacher fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold">60+</h4>
+                            <p class="fw-bold lead">Trainers</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card shadow text-center p-3 highlight-card">
+                            <div class="icon-wrapper mx-auto mb-3 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-award fs-3"></i>
+                            </div>
+                            <h4 class="fw-bold">85%</h4>
+                            <p class="fw-bold lead">Placement Percentage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About us section -->
+    <section class="about-section " style="background-color: #7B3FBF;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="about-heading mt-4">About Us</h1>
+                    <p class="about-text" data-aos="fade-down">
+                        Welcome to Apex IT Solution! We're all about innovation and excellence. Our goal? To equip
+                        individuals and professionals with top-notch software development and tech skills.
+
+                        Expert-Crafted Curriculum: Designed by industry pros, our hands-on training ensures you're ready
+                        to tackle real-world challenges.
+
+                        Personalized Mentorship: Our dedicated instructors provide one-on-one guidance, helping you
+                        develop both technical expertise and essential soft skills for career growth.
+                    </p>
+                    <p class="about-text" data-aos="fade-up">
+                        Thriving Tech Community: Be part of a network of tech enthusiasts, learn in a cutting-edge
+                        environment, and take your skills to the next level.
+
+                        At Apex IT, we're not just about learning—we're about shaping the future of technology. Let’s
+                        grow together!
+                    </p>
+                </div>
+                <div class="col-lg-4 text-center" data-aos="fade-right">
+                    <img src="./images/about-imgs.png" alt="About Us Image" class="img-fluid about-imgs h-100 mt-5">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class=" py-5" style="background-color: #F3F4F6;">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up-right">
+                <h2 class="fw-bold" style="color: #A051F5;">Why To Choose Us?</h2>
+                <p class="fs-4 fw-bold lead">"Level Up Your Career with Apex IT Solution!"</p>
+            </div>
+
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 ">
+                                <div class="card border-0 shadow h-100 rounded-4">
+                                    <div class="card-body text-center">
+                                        <img src="./images/resumeBuilding.svg" alt="Resume" class="img-fluid mb-3"
+                                            style="max-height: 80px;">
+                                        <h5 class="fw-bold">Resume Building</h5>
+                                        <p>We provide customized resume-building services, making sure your
+                                            resume
+                                            effectively showcases your strengths and accomplishments.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card border-0 shadow h-100 rounded-4">
+                                    <div class="card-body text-center">
+                                        <img src="./images/careerGuidance.svg" alt="Career" class="img-fluid mb-3"
+                                            style="max-height: 80px;">
+                                        <h5 class="fw-bold">Career Guidance</h5>
+                                        <p>We offer personalized career guidance, sharing valuable insights
+                                            and
+                                            strategies to help you navigate your professional path with
+                                            confidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card border-0 shadow h-100 rounded-4">
+                                    <div class="card-body text-center">
+                                        <img src="./images/skillDevelopment.svg" alt="Skill Development"
+                                            class="img-fluid mb-3" style="max-height: 80px;">
+                                        <h5 class="fw-bold">Skill Development</h5>
+                                        <p>We focus on skill development by providing a variety of courses
+                                            and resources
+                                            to help you sharpen your expertise.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card border-0 shadow h-100 rounded-4">
+                                    <div class="card-body text-center">
+                                        <img src="./images/interviewPrep.svg" alt="Interview Prep"
+                                            class="img-fluid mb-3" style="max-height: 80px;">
+                                        <h5 class="fw-bold">Interview Preparation</h5>
+                                        <p>We offer comprehensive interview preparation, helping you build
+                                            the skills
+                                            and confidence needed to succeed in any professional setting.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card border-0 shadow h-100 rounded-4">
+                                    <div class="card-body text-center">
+                                        <img src="./images/MockInterview..svg" alt="Mock Interviews"
+                                            class="img-fluid mb-3" style="max-height: 80px;">
+                                        <h5 class="fw-bold">Mock Interviews</h5>
+                                        <p>We conduct in-depth mock interview sessions, giving you practical
+                                            experience
+                                            and constructive feedback to boost your confidence and
+                                            readiness.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="card border-0 shadow h-100 rounded-4">
+                                    <div class="card-body text-center">
+                                        <img src="./images/jobSearch.svg" alt="Job Search" class="img-fluid mb-3"
+                                            style="max-height: 80px;">
+                                        <h5 class="fw-bold">Job Search Strategies</h5>
+                                        <p>We focus on job search support, offering personalized guidance
+                                            and resources
+                                            to help you navigate the job market effectively.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5"
+        style="background-image: url('./images/dot-img.png'); background-size: cover; background-position: center;">
+
+        <div class="container testimonial-container" data-aos="fade-right">
+            <h1 class="text-center fs-1  fw-bold" style="color: #A051F5; font-weight: bold;">
+                India’s leading institute for professional software training.
+            </h1>
+            <p class="text-center mb-5 fs-4 fw-bold">
+                Our success is measured by our students' achievements. Explore their inspiring stories and see the
+                impact for yourself!
+            </p>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 mb-3">
+                    <div class="testimonial-card h-100">
+                        <p>I recently completed the software testing course at Apex IT Solution, and it was excellent!
+                            The well-structured curriculum, hands-on training, and expert instructors made complex
+                            concepts easy to grasp. This course greatly enhanced my skills and prepared me for
+                            real-world testing. Highly recommended!</p>
+                        <p class="fw-bold">- Ram Bacchewad</p>
+                        <div class="star-rating">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="testimonial-card h-100">
+                        <p>To share my experience with Apex IT Solution, it’s very amazing. As part of this
+                            institute, I have gained so much knowledge. The teaching staff is very well. They have a
+                            high level of knowledge about the Java Full Stack Development course, and their nature is
+                            very helpful.</p>
+                        <p class="fw-bold">- AMIT ADTE</p>
+                        <div class="star-rating">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="testimonial-card h-100">
+                        <p>Apex IT Solution is an excellent IT training institute! I enrolled in the Java course and
+                            gained in-depth knowledge through practical training. The highly skilled faculty provided
+                            great guidance, helping me enhance my skills and secure job opportunities. A special thanks
+                            to Dinesh Sir for his outstanding training. I highly recommend it! </p>
+                        <p class="fw-bold">- HARSH DESHMUKH</p>
+                        <div class="star-rating">
+                            &#9733; &#9733; &#9733; &#9733; &#9733;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #A051F5;">Popular Courses</h2>
+                <p class="fs-4 fw-bold">Boost your skills with our carefully designed courses, created by experts and
+                    aligned with industry standards.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Added g-4 for responsive spacing -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="position-relative">
+                            <img src="./images/data-science.png" class="card-img-top" alt="Data Science">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">POPULAR</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Data Science course in Pune</h5>
+                            <p class="card-text">Explore AI and ML to analyze data, predict outcomes, and enhance
+                                decision-making. Gain expert guidance and hands-on experience with real projects.</p>
+                            <p><i class="bi bi-people"></i> <strong>480</strong> <span
+                                    class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="position-relative">
+                            <img src="./images/devops.png" class="card-img-top" alt="AWS with DevOps">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">POPULAR</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">AWS with DevOps training in Pune</h5>
+                            <p class="card-text">Become proficient in Python for development, data analysis, and
+                                automation. Learn the essentials and apply your skills through real-world projects.</p>
+                            <p><i class="bi bi-people"></i> <strong>980</strong> Learners <span
+                                    class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="position-relative">
+                            <img src="./images/microsoft-azure.png" class="card-img-top" alt="Microsoft Azure">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">POPULAR</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Microsoft Azure training in Pune</h5>
+                            <p class="card-text">Harness the power of Microsoft Azure to design, deploy, and manage
+                                scalable cloud solutions with the latest tools and technologies.</p>
+                            <p><i class="bi bi-people"></i> <strong>480</strong> Learners <span
+                                    class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow">
+                        <div class="position-relative">
+                            <img src="./images/java-development.png" class="card-img-top" alt="Java Development">
+                            <span class="badge bg-danger position-absolute top-0 end-0 m-2">POPULAR</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Java Development classes in Pune</h5>
+                            <p class="card-text">Master Full Stack Java Development and build dynamic, scalable web
+                                applications using Java, Spring Boot, and React.
+                            </p>
+                            <p><i class="bi bi-people"></i> <strong>760</strong> Learners <span
+                                    class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-lg text-white" style="background-color: #7B3FBF;">
+                    <a href="./courses/data-science.html" class="text-white text-decoration-none">Browse All Courses</a>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="py-5" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #A051F5;">Our Placed Students</h2>
+            </div>
+
+            <div class="scroll-container">
+                <div class="scrolling-wrapper">
+
+                    <div class="col">
+                        <div class="Placed-student card text-center Original-set-of-cards">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="Placed-student card text-center Cloned-set-of-cards-for-infinite-looping">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <section class="mb-5" style="background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);">
+        <div class="container">
+            <div class="scroll-container-custom Original-set-of-cards">
+                <div class="scrolling-wrapper-placed move-left-to-right">
+
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+
+                    <div class="col Cloned-set-of-cards-for-infinite-looping">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="Placed-student card text-center mx-3">
+                            <img src="./images/sanjana.png" class="card-img-top rounded-circle mx-auto d-block">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="py-2">
+        <div class="container text-center">
+            <h2 class="fw-bold" style="color: #A051F5;">Trusted by Over 350+ Clients and Placement Partners</h2>
+            <p>Meet our esteemed partners and placement associates over 350 trusted companies. These collaborations
+                reflect our commitment to excellence. Explore below to see some of the prestigious brands we work with.
+            </p>
+        </div>
+        <div class="container my-3">
+            <div class="d-flex overflow-hidden">
+                <div class="d-flex align-items-center animate-slide">
+                    <div class="logo-track">
+                        <img src="./images/company-logo/accenture.png" style="width: 120px; height: 120px;"
+                            alt="Accenture">
+                        <img src="./images/company-logo/adp.png" style="width: 120px; height: 120px;" alt="ADP">
+                        <img src="./images/company-logo/amazon.png" style="width: 120px; height: 120px;" alt="Amazon">
+                        <img src="./images/company-logo/amdocs.png" style="width: 120px; height: 120px;" alt="Amdocs">
+                        <img src="./images/company-logo/atos.png" style="width: 120px; height: 120px;" alt="Atos">
+                        <img src="./images/company-logo/barclays.png" style="width: 120px; height: 120px;"
+                            alt="Barclays">
+                        <img src="./images/company-logo/bmc.png" style="width: 120px; height: 120px;" alt="BMC">
+                        <img src="./images/company-logo/capgemini.png" style="width: 120px; height: 120px;"
+                            alt="Capgemini">
+                        <img src="./images/company-logo/congnizant.png" style="width: 120px; height: 120px;"
+                            alt="Cognizant">
+                        <img src="./images/company-logo/finserv.png" style="width: 120px; height: 120px;" alt="Finserv">
+                        <img src="./images/company-logo/genpact.png" style="width: 120px; height: 120px;" alt="Genpact">
+                        <img src="./images/company-logo/google.png" style="width: 120px; height: 120px;" alt="Google">
+                        <img src="./images/company-logo/hcl.png" style="width: 120px; height: 120px;" alt="HCL">
+                        <img src="./images/company-logo/hsbc.png" style="width: 120px; height: 120px;" alt="HSBC">
+                        <img src="./images/company-logo/ibm.png" style="width: 120px; height: 120px;" alt="IBM">
+                        <img src="./images/company-logo/indiamart.png" style="width: 120px; height: 120px;"
+                            alt="IndiaMart">
+                        <img src="./images/company-logo/infosys.png" style="width: 120px; height: 120px;" alt="Infosys">
+                        <img src="./images/company-logo/jpmorgan.png" style="width: 120px; height: 120px;"
+                            alt="JPMorgan">
+                        <img src="./images/company-logo/makemytrip.png" style="width: 120px; height: 120px;"
+                            alt="MakeMyTrip">
+                        <img src="./images/company-logo/microsoft.png" style="width: 120px; height: 120px;"
+                            alt="Microsoft">
+                        <img src="./images/company-logo/mindtree.png" style="width: 120px; height: 120px;"
+                            alt="Mindtree">
+                        <img src="./images/company-logo/persistent.png" style="width: 120px; height: 120px;"
+                            alt="Persistent">
+                        <img src="./images/company-logo/pubmatic.png" style="width: 120px; height: 120px;"
+                            alt="Pubmatic">
+                        <img src="./images/company-logo/samsung.png" style="width: 120px; height: 120px;" alt="Samsung">
+                        <img src="./images/company-logo/siemens.png" style="width: 120px; height: 120px;" alt="Siemens">
+                        <img src="./images/company-logo/sony.png" style="width: 120px; height: 120px;" alt="Sony">
+                        <img src="./images/company-logo/tcs.png" style="width: 120px; height: 120px;" alt="TCS">
+                        <img src="./images/company-logo/wipro.png" style="width: 120px; height: 120px;" alt="Wipro">
+                        <img src="./images/company-logo/yahoo.png" style="width: 120px; height: 120px;" alt="Yahoo">
+                        <img src="./images/company-logo/zensar.png" style="width: 120px; height: 120px;" alt="Zensar">
+
+                        <!-- Duplicate logos for infinite scroll effect -->
+                        <img src="./images/company-logo/accenture.png" style="width: 120px; height: 120px;"
+                            alt="Accenture">
+                        <img src="./images/company-logo/adp.png" style="width: 120px; height: 120px;" alt="ADP">
+                        <img src="./images/company-logo/amazon.png" style="width: 120px; height: 120px;" alt="Amazon">
+                        <img src="./images/company-logo/amdocs.png" style="width: 120px; height: 120px;" alt="Amdocs">
+                        <img src="./images/company-logo/atos.png" style="width: 120px; height: 120px;" alt="Atos">
+                        <img src="./images/company-logo/barclays.png" style="width: 120px; height: 120px;"
+                            alt="Barclays">
+                        <img src="./images/company-logo/bmc.png" style="width: 120px; height: 120px;" alt="BMC">
+                        <img src="./images/company-logo/capgemini.png" style="width: 120px; height: 120px;"
+                            alt="Capgemini">
+                        <img src="./images/company-logo/congnizant.png" style="width: 120px; height: 120px;"
+                            alt="Cognizant">
+                        <img src="./images/company-logo/finserv.png" style="width: 120px; height: 120px;" alt="Finserv">
+                        <img src="./images/company-logo/genpact.png" style="width: 120px; height: 120px;" alt="Genpact">
+                        <img src="./images/company-logo/google.png" style="width: 120px; height: 120px;" alt="Google">
+                        <img src="./images/company-logo/hcl.png" style="width: 120px; height: 120px;" alt="HCL">
+                        <img src="./images/company-logo/hsbc.png" style="width: 120px; height: 120px;" alt="HSBC">
+                        <img src="./images/company-logo/ibm.png" style="width: 120px; height: 120px;" alt="IBM">
+                        <img src="./images/company-logo/indiamart.png" style="width: 120px; height: 120px;"
+                            alt="IndiaMart">
+                        <img src="./images/company-logo/infosys.png" style="width: 120px; height: 120px;" alt="Infosys">
+                        <img src="./images/company-logo/jpmorgan.png" style="width: 120px; height: 120px;"
+                            alt="JPMorgan">
+                        <img src="./images/company-logo/makemytrip.png" style="width: 120px; height: 120px;"
+                            alt="MakeMyTrip">
+                        <img src="./images/company-logo/microsoft.png" style="width: 120px; height: 120px;"
+                            alt="Microsoft">
+                        <img src="./images/company-logo/mindtree.png" style="width: 120px; height: 120px;"
+                            alt="Mindtree">
+                        <img src="./images/company-logo/persistent.png" style="width: 120px; height: 120px;"
+                            alt="Persistent">
+                        <img src="./images/company-logo/pubmatic.png" style="width: 120px; height: 120px;"
+                            alt="Pubmatic">
+                        <img src="./images/company-logo/samsung.png" style="width: 120px; height: 120px;" alt="Samsung">
+                        <img src="./images/company-logo/siemens.png" style="width: 120px; height: 120px;" alt="Siemens">
+                        <img src="./images/company-logo/sony.png" style="width: 120px; height: 120px;" alt="Sony">
+                        <img src="./images/company-logo/tcs.png" style="width: 120px; height: 120px;" alt="TCS">
+                        <img src="./images/company-logo/wipro.png" style="width: 120px; height: 120px;" alt="Wipro">
+                        <img src="./images/company-logo/yahoo.png" style="width: 120px; height: 120px;" alt="Yahoo">
+                        <img src="./images/company-logo/zensar.png" style="width: 120px; height: 120px;" alt="Zensar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" style="background-color: #F1F5F9;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="color: #A051F5;">Discover Our Core Expertise</h2>
+                <p class="text-black">
+                    Discover specialized programs tailored to equip you with the skills and expertise needed to thrive
+                    in today’s evolving tech industry.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-6 animate__animated animate__fadeInLeft">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-laptop-code fa-2x me-3 text-primary"></i>
+                        <div>
+                            <h5 class="fw-bold">Comprehensive Software Development Courses</h5>
+                            <p>Master software engineering, programming languages, and application development from
+                                fundamentals to advanced levels.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate__animated animate__fadeInLeft animate__delay-1s">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-shield-alt fa-2x me-3 text-danger"></i>
+                        <div>
+                            <h5 class="fw-bold">Innovative Cybersecurity Training</h5>
+                            <p>Stay ahead of cyber threats with our in-depth cybersecurity training, focusing on
+                                practical skills and real-world applications.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate__animated animate__fadeInLeft animate__delay-2s">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-brain fa-2x me-3 text-success"></i>
+                        <div>
+                            <h5 class="fw-bold">Expert-Led Data Science and AI Programs</h5>
+                            <p>Get hands-on experience in machine learning, AI, and data analytics with guidance from
+                                industry experts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate__animated animate__fadeInLeft animate__delay-3s">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-building fa-2x me-3 text-info"></i>
+                        <div>
+                            <h5 class="fw-bold">Customized Corporate Training Solutions</h5>
+                            <p>Customized training programs designed to upgrade your team's technical skills and keep
+                                them ahead with the latest technologies.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate__animated animate__fadeInLeft animate__delay-4s">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-project-diagram fa-2x me-3 text-warning"></i>
+                        <div>
+                            <h5 class="fw-bold">Robust Project-Based Learning Approach</h5>
+                            <p>Work on real-world projects and collaborate with peers to build a strong portfolio and
+                                gain valuable hands-on experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate__animated animate__fadeInLeft animate__delay-5s">
+                    <div class="d-flex align-items-start">
+                        <i class="fas fa-database fa-2x me-3 text-secondary"></i>
+                        <div>
+                            <h5 class="fw-bold">Advanced Database Management</h5>
+                            <p>Master database design, development, and administration to efficiently manage and utilize
+                                data.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold " style="color: #A051F5;">Frequently Asked Questions</h2>
+        </div>
+        <div class="container">
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            What courses are available at Apex IT Solution?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We provide courses in software development, data science, cybersecurity, and more.
+                            and
+                            more.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            How do I enroll in a course at Apex IT Solution?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Enroll by visiting our website, filling out the registration form, and selecting your
+                            desired course.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Do you provide online or remote learning options?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we provide flexible online classes with live sessions and recorded materials for remote
+                            learners.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                            What makes Apex IT Solution different from other educational institutions?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Apex IT Solution stands out with its industry-focused curriculum, expert instructors,
+                            hands-on learning, and personalized guidance. We are dedicated to helping students succeed
+                            with quality education and continuous support.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                            What career opportunities do Apex IT Solution graduates have?
+                        </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Apex IT Solution graduates can pursue careers as software developers, web developers, data
+                            analysts, cybersecurity specialists, and more. Our career services team offers job placement
+                            assistance, networking opportunities, and career guidance to help them succeed.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                            Is financial aid available, and how can you assist students?
+                        </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we provide financial aid options such as scholarships, grants, and tuition assistance.
+                            Our admissions team can guide you through the application process.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="container-fluid px-3 text-center mt-5   ">
+            <p>Still have questions? <a href="./contact-us.html" class="text-primary fw-bold"
+                    style="text-decoration: none;">Contact
+                    our
+                    support</a></p>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 ">
+                    <h5>About Us</h5>
+                    <p>Apex IT Solution offers dynamic courses that combine theory with hands-on training, preparing you
+                        for a successful IT career. Learn from expert instructors and gain industry-ready skills in a
+                        cutting-edge environment.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Our Courses</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./courses/data-science.html">Data Science</a></li>
+                        <li><a href="./courses/data-analyst.html">Data Analyst</a></li>
+                        <li><a href="./courses/power-bi.html">Power BI</a></li>
+                        <li><a href="./courses/aws-devops.html">AWS with DevOps</a></li>
+                        <li><a href="./courses/react-js.html">React JS</a></li>
+                        <li><a href="./courses/java-development.html">Java Development</a></li>
+                        <li><a href="./courses/python-development.html">Python Development</a></li>
+                        <li><a href="./courses/full-stack-web-development.html">Full Stack Web Development</a></li>
+                        <li><a href="./courses/microsoft-azure.html">Microsoft Azure</a></li>
+                        <li><a href="./courses/oracle-sql-and-plsql.html">Oracle SQL and PLSQL</a></li>
+                        <li><a href="./courses/business-analyst.html">Business Analyst</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="./about-us.html">About Us</a></li>
+                        <li><a href="./career/technical.html">Technical Job Openings</a></li>
+                        <li><a href="./career/non-technical.html">NON-Technical Job Openings</a></li>
+                        <li><a href="./batches/all-batches.html">All Batches</a></li>
+                        <li><a href="./batches/online-batches.html">Online Batches</a></li>
+                        <li><a href="./batches/offline-batches.html">Offline Batches</a></li>
+                        <li><a href="./batches/hybrid-batches.html">Hybrid Batches</a></li>
+                        <li><a href="./our-placement.html">Our Placements</a></li>
+                        <li><a href="./contact-us.html">Contact Us</a></li>
+                        <li><a href="./enterprise-services.html">Enterprise Services</a></li>
+                        <li><a href="./management-program.html">Management Program</a></li>
+                        <li><a href="./microsoft-365.html">Microsoft-365</a></li>
+                        <li><a href="./technology-program.html">Technology Program</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Details</h5>
+                    <p><i class="fas fa-map-marker-alt" style="color: #A051F5;"></i> Office No. B 622, 6th Floor
+                        Suratwala Mark Plazzo, Hinjawadi,
+                        Pimpri-Chinchwad, Pune Maharashtra 411057.</p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: #A051F5;"></i>
+                        <a href="mailto:info@apexitsolution.in" style="text-decoration: none; color: inherit;">
+                            info@apexitsolution.in
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope" style="color: #A051F5;"></i>
+                        <a href="mailto:hr@apexitsolution.in" style="text-decoration: none; color: inherit;">
+                            hr@apexitsolution.in
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fas fa-phone" style="color: #A051F5;"></i>
+                        <a href="tel:+918956889634" style="text-decoration: none; color: inherit;">+91 89568 89634</a>,
+                        <a href="tel:+918010410293" style="text-decoration: none; color: inherit;">8010410293</a>
+                    </p>
+
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/918830355036" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/apex_it_solutions/" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/apexit-solution/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- <div class="policy-links mt-3">
+                        <a href="#">Refund Policy</a> | <a href="#">Privacy Policy</a>
+                    </div> -->
+                    <p class="mt-3">2025 &copy; All Rights Reserved | Designed and Developed by <a
+                            href="./index.html">Apex IT
+                            Solution</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- top nav toggle -->
+    <script>
+        const toggler = document.getElementById('navbarToggler');
+        const icon = toggler.querySelector('i');
+
+        // Handle icon change on toggle
+        toggler.addEventListener('click', () => {
+            const isExpanded = toggler.getAttribute('aria-expanded') === 'true';
+
+            if (isExpanded) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+
+    <!-- courses -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggle = document.getElementById("navbarDropdown");
+            const dropdownMenu = dropdownToggle.nextElementSibling;
+
+            dropdownToggle.addEventListener("click", function (e) {
+                e.preventDefault();
+                dropdownMenu.classList.toggle("show");
+            });
+
+            // Close dropdown on clicking outside
+            document.addEventListener("click", function (e) {
+                if (!dropdownToggle.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+
+
+    <!-- Script to Stop Video When Modal Closes -->
+    <script>
+        const videoModal = document.getElementById('videoModal');
+        videoModal.addEventListener('hidden.bs.modal', () => {
+            const iframe = document.getElementById('careerVideo');
+            iframe.src = iframe.src; // Reset video src to stop playback
+        });
+    </script>
+
+
+    <script>
+        // Show the modal 2 seconds after the page reloads
+        window.onload = function () {
+            setTimeout(() => {
+                var bookSeatModal = new bootstrap.Modal(document.getElementById('bookSeatModal'));
+                bookSeatModal.show();
+            }, 1000);
+        };
+
+        // Show modal on link click
+        document.getElementById('bookSeatLink').addEventListener('click', function (event) {
+            event.preventDefault();
+            var bookSeatModal = new bootstrap.Modal(document.getElementById('bookSeatModal'));
+            bookSeatModal.show();
+        });
+    </script>
+
+
+    <!-- 
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            if (window.innerWidth <= 768) {
+                let careerCarousel = document.getElementById("careerCarousel");
+                let carouselInstance = new bootstrap.Carousel(careerCarousel, {
+                    interval: false, // Stop auto-sliding
+                    ride: false, // Disable manual sliding
+                    touch: false, // Disable swipe gestures
+                    keyboard: false, // Disable arrow key navigation
+                });
+            }
+        });
+    </script> -->
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+
+
+</body>
+
+</html>
